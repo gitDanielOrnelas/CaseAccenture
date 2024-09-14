@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 
 public class ValidaMensagemForm {
 	
-	private WebDriver navegador;
+	private final WebDriver navegador;
 	
 	public ValidaMensagemForm(WebDriver navegador) {
 		this.navegador = navegador;

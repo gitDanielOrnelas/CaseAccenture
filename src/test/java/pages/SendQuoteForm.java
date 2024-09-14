@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class SendQuoteForm {
 	
-	private WebDriver navegador;
+	private final WebDriver navegador;
 	
 	public SendQuoteForm(WebDriver navegador) {
 		this.navegador = navegador;

@@ -1,6 +1,7 @@
 package pages;
 
 import java.time.Duration;
+
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -11,7 +12,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ProductDataForm {
 	
-	private WebDriver navegador;
+	private final WebDriver navegador;
 	
 	public ProductDataForm(WebDriver navegador) {
 		this.navegador = navegador;

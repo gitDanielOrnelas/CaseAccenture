@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class PriceOptionsForm {
 	
-	private WebDriver navegador;
+	private final WebDriver navegador;
 	
 	public PriceOptionsForm(WebDriver navegador) {
 		this.navegador = navegador;
