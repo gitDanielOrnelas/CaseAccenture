@@ -9,7 +9,7 @@ public class Web {
 	
     System.setProperty("webdriver.chrome.driver", "C:\\Users\\User\\OneDrive\\Documentos\\Automação\\chromedriver-win64");
     
-    WebDriver navegador = new ChromeDriver();
+    final WebDriver navegador = new ChromeDriver();
     navegador.manage().window().maximize();
     navegador.get("http://sampleapp.tricentis.com/101/app.php");
     navegador.manage().timeouts(); 
