@@ -1,5 +1,7 @@
 package pages;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -14,11 +16,13 @@ public class PriceOptionsForm {
 	}
 	
 	public PriceOptionsForm preenchendoPrice() throws InterruptedException {
-	    
-		new WebDriverWait(navegador, 10)
-	    .until(ExpectedConditions.presenceOfElementLocated(By.id("nextsendquote")));
+
+		// CriaÃ§Ã£o do WebDriverWait com tempo de espera usando Duration
+		WebDriverWait wait = new WebDriverWait(navegador, Duration.ofSeconds(10));
+		// Aguarda atÃ© que o elemento esteja presente
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.id("nextsendquote")));
 		
-		//Selecionando a opção GOLD
+		//Selecionando a opï¿½ï¿½o GOLD
 	    navegador.findElement(By.xpath(".//table[@id='priceTable']/tfoot/tr/th[2]/label[2]/span")).click();
 		
 		//Campo Next

@@ -1,5 +1,7 @@
 package pages;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -17,8 +19,10 @@ public class InsurantDataForm {
 
 	public InsurantDataForm preenchendoInsurant() throws InterruptedException {
 		
-		new WebDriverWait(navegador, 10)
-	    .until(ExpectedConditions.presenceOfElementLocated(By.id("nextenterproductdata")));
+		// Criação do WebDriverWait com tempo de espera usando Duration
+		WebDriverWait wait = new WebDriverWait(navegador, Duration.ofSeconds(10));
+		// Aguarda até que o elemento esteja presente
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.id("nextenterproductdata")));
 		
 		//Campo First Name        
 		navegador.findElement(By.id("firstname")).sendKeys("Daniel");

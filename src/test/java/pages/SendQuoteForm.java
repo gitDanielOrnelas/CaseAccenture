@@ -1,5 +1,7 @@
 package pages;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -15,8 +17,10 @@ public class SendQuoteForm {
 	
 	public SendQuoteForm preenchendoSend() throws InterruptedException {
 		
-	    new WebDriverWait(navegador, 10)
-	    .until(ExpectedConditions.presenceOfElementLocated(By.id("sendemail")));
+   		// Criação do WebDriverWait com tempo de espera usando Duration
+		WebDriverWait wait = new WebDriverWait(navegador, Duration.ofSeconds(10));
+		// Aguarda até que o elemento esteja presente
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.id("sendemail")));
 	    
 		//Campo E-mail
         navegador.findElement(By.id("email")).sendKeys("ornelas.daniel@outlook.com");        

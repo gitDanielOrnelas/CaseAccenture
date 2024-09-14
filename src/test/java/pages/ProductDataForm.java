@@ -1,5 +1,6 @@
 package pages;
 
+import java.time.Duration;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -18,9 +19,11 @@ public class ProductDataForm {
 	
 	@Test
 	public ProductDataForm preenchendoProduct() throws InterruptedException {
-		
-	    new WebDriverWait(navegador, 10)
-	    .until(ExpectedConditions.presenceOfElementLocated(By.id("nextselectpriceoption")));
+
+		// Criação do WebDriverWait com tempo de espera usando Duration
+		WebDriverWait wait = new WebDriverWait(navegador, Duration.ofSeconds(10));
+		// Aguarda até que o elemento esteja presente
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.id("nextselectpriceoption")));
 	    
 		//Campo Start Date
 	    navegador.findElement(By.id("startdate")).sendKeys("12/10/2025");

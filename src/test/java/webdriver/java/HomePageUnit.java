@@ -4,13 +4,13 @@ package webdriver.java;
 //DESCONSIDERAR
 //
 import static org.junit.Assert.assertEquals;
-
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+
 import configGeral.java.Web;
 
 public class HomePageUnit {
@@ -18,7 +18,8 @@ public class HomePageUnit {
     private WebDriver navegador;
 
 	@Before
-	public void setUp() throws Exception {
+	public void setUp() throws Exception {
+
 		navegador = Web.createChrome();
 	    }	
 
@@ -132,7 +133,7 @@ public class HomePageUnit {
         
 ///////////////////////////////////////////////////////////////////////
         
-        //Selecionando a opção GOLD
+        //Selecionando a opï¿½ï¿½o GOLD
 	    navegador.findElement(By.xpath(".//table[@id='priceTable']/tfoot/tr/th[2]/label[2]/span")).click();
 		
 		//Campo Next
