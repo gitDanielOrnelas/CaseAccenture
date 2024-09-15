@@ -12,7 +12,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ProductDataForm {
 	
-	private final WebDriver navegador;
+	private WebDriver navegador;
 	
 	public ProductDataForm(WebDriver navegador) {
 		this.navegador = navegador;

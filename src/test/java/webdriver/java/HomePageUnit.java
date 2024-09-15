@@ -164,7 +164,8 @@ public class HomePageUnit {
         
 ///////////////////////////////////////////////////////////////////////
         
-		WebElement telaFinal = navegador.findElement(By.xpath(".//h2[contains(.,'Sending e-mail success!')]"));
+        wait(10);
+		WebElement telaFinal = navegador.findElement(By.xpath("/html/body/div[4]/h2[contains(text(),'Sending e-mail success!')]"));
 	    String validaEnvio = telaFinal.getText();
 	    assertEquals("Sending e-mail success!",validaEnvio);
 	    

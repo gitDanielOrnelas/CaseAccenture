@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class VehicleDataForm {
 	
-	private final WebDriver navegador;
+	private WebDriver navegador;
 	
 	public VehicleDataForm(WebDriver navegador) {
 		this.navegador = navegador;

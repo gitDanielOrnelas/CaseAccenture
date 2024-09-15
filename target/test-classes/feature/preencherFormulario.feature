@@ -3,7 +3,7 @@
 Feature: Preencher Formulario Accenture
 
   # Realizar o acesso ao site "http://sampleapp.tricentis.com/101/app.php",
-  # preencher os formulários e validar mensagem na tela “Sending e-mail success!” .
+  # preencher os formulÃ¡rios e validar mensagem na tela Sending e-mail success! .
   Scenario: Acessar o Site sampleapp, preencher os formularios e validar mensagem de e-mail enviado
     Given que acesso o site sampleapp
     And preencho o formulario VehicleData

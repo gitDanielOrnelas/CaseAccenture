@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class InsurantDataForm {
 
-	private final WebDriver navegador;
+	private WebDriver navegador;
 
 	public InsurantDataForm(WebDriver navegador) {
 		this.navegador = navegador;
