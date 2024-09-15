@@ -1,2 +1,3 @@
 # CaseAccenture
-Case Accenture
+
+Testando novos ajustes e cenários
